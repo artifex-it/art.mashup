@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="art.mashup">
+<body>
+
+<!--metal:header fill-slot="header">
+    <metal:header define-macro="header">
+    ###<div tal:content="context/session_data_manager/getSessionData" />###
+    ###<div tal:content="context/REQUEST/form" />###
+    </metal:header>
+</metal:header-->
+
+<metal:title fill-slot="content-title">
+    <metal:title define-macro="content-title">
+        <tal:block condition="context/hideLocalTitle">
+        </tal:block>
+        <tal:block condition="not:context/hideLocalTitle">
+            <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+             Generic KSS Title. Is rendered with class="documentFirstHeading".
+            </h1>
+        </tal:block>
+    </metal:title>
+</metal:title>
+
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core" tal:content="structure context/get_ext_body">
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

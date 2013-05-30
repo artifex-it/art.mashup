@@ -1,0 +1,98 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="art.mashup">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+    <!-- External Page -->
+
+    <!-- Views -->
+    <browser:page
+        for="..interfaces.externalpage.IExternalPage"
+        name="external_page_view"
+        template="external_page_view.pt"
+        class=".views.ExternalPageView"
+        permission="zope2.View"
+        allowed_attributes=""
+        />
+
+    <!-- Viewlets -->
+    <browser:viewlet
+        name="plone.htmlhead.title"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".viewlets.ExternalPageTitleViewlet"
+        for="..interfaces.externalpage.IExternalPage"
+        permission="zope2.View"
+        />
+
+
+    <!-- Web Service Client -->
+
+    <!-- Views -->
+    <browser:page
+        name="web_service_view"
+        class=".views.WebServiceView"
+        template="web_service_view.pt"
+        for="..interfaces.webserviceclient.IWebServiceClient"
+        permission="zope2.View"
+        allowed_attributes=""
+        />
+
+    <!-- Viewlet managers -->
+    <browser:viewletManager
+        name="webservice_result_container"
+        provides="..interfaces.webserviceclient.IWebServiceResult"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <!-- Viewlets -->
+    <browser:viewlet
+        name="webservice_result"
+        manager="..interfaces.webserviceclient.IWebServiceResult"
+        class=".viewlets.WebServiceResultViewlet"
+        for="..interfaces.webserviceclient.IWebServiceClient"
+        permission="zope2.View"
+        />
+
+
+    <!-- XML Document -->
+
+    <!-- Views -->
+    <browser:page
+        name="xml_document_view"
+        class=".views.XMLDocumentView"
+        template="xml_document_view.pt"
+        for="..interfaces.xmldocument.IXMLDocument"
+        permission="zope2.View"
+        allowed_attributes=""
+        />
+
+    <!-- Viewlet managers -->
+    <browser:viewletManager
+        name="xml_document_container"
+        provides="..interfaces.xmldocument.IXMLDocumentContent"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <!-- Viewlets -->
+    <browser:viewlet
+        name="plone.htmlhead.title"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".viewlets.XMLDocumentTitleViewlet"
+        for="..interfaces.xmldocument.IXMLDocument"
+        permission="zope2.View"
+        />
+    <browser:viewlet
+        name="xml_document_content"
+        manager="..interfaces.xmldocument.IXMLDocumentContent"
+        class=".viewlets.XMLDocumentContentViewlet"
+        for="..interfaces.xmldocument.IXMLDocument"
+        permission="zope2.View"
+        />
+
+</configure>

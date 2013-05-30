@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-06-07 22:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./profiles/default/types/External_Page.xml
+msgid "External Page"
+msgstr ""
+
+#: ./profiles/default/types/XML_Document.xml
+msgid "Viewing of a XML document"
+msgstr ""
+
+#: ./profiles/default/types/Web_Service_Client.xml
+msgid "Viewing of a web service result"
+msgstr ""
+
+#: ./profiles/default/types/External_Page.xml
+msgid "Viewing of an external page"
+msgstr ""
+
+#: ./profiles/default/types/Web_Service_Client.xml
+msgid "Web Service Client"
+msgstr ""
+
+#: ./profiles/default/types/XML_Document.xml
+msgid "XML Document"
+msgstr ""
+
+#. Default: "Relative path from art.mashup/art/mashup/browser directory (example ../../../../apt.visit/apt/visit/templates/tpl_example.pt)"
+#: ./content/xmldocument.py:80
+msgid "alternate_template_description"
+msgstr ""
+
+#. Default: "Alternate Template"
+#: ./content/xmldocument.py:79
+msgid "alternate_template_label"
+msgstr ""
+
+#. Default: "Convert HTML to XHTML"
+#: ./content/externalpage.py:66
+msgid "c_to_xhtml_label"
+msgstr ""
+
+#. Default: "Failure connecting to server"
+#: ./content/externalpage.py:152
+msgid "connection_error"
+msgstr ""
+
+#. Default: "Container tag"
+#: ./content/xmldocument.py:51
+msgid "container_tag_label"
+msgstr ""
+
+#. Default: "example values: utf-8, ascii, cp1252, iso-8859-1"
+#: ./content/xmldocument.py:42
+msgid "document_encoding_description"
+msgstr ""
+
+#. Default: "Document encoding"
+#: ./content/xmldocument.py:41
+msgid "document_encoding_label"
+msgstr ""
+
+#. Default: "Document URL"
+#: ./content/xmldocument.py:30
+msgid "document_url_label"
+msgstr ""
+
+#. Default: "Element tag"
+#: ./content/xmldocument.py:60
+msgid "element_tag_label"
+msgstr ""
+
+#. Default: "example values: utf-8, ascii, cp1252, iso-8859-1"
+#: ./content/externalpage.py:47
+msgid "external_encoding_description"
+msgstr ""
+
+#. Default: "External encoding"
+#: ./content/externalpage.py:46
+msgid "external_encoding_label"
+msgstr ""
+
+#. Default: "use URL parameter _art_ext_url_ind to select the external URL, 0 is default [one URL per line]"
+#: ./content/externalpage.py:34
+msgid "external_urls_description"
+msgstr ""
+
+#. Default: "External URLs"
+#: ./content/externalpage.py:33
+msgid "external_urls_label"
+msgstr ""
+
+#. Default: "Start tags of fragments to extract"
+#: ./content/externalpage.py:56
+msgid "fragments_start_tags_label"
+msgstr ""
+
+#. Default: "one tag per line, in render order"
+#: ./content/externalpage.py:57
+msgid "fragments_starts_tags_description"
+msgstr ""
+
+#. Default: "Hide local content title (<h1>)"
+#: ./content/externalpage.py:68
+msgid "hide_loc_title_label"
+msgstr ""
+
+#. Default: "Options"
+#: ./content/externalpage.py:71
+msgid "option_label"
+msgstr ""
+
+#. Default: "Service name"
+#: ./content/webserviceclient.py:41
+msgid "service_name_label"
+msgstr ""
+
+#. Default: "one service parameter per line"
+#: ./content/webserviceclient.py:51
+msgid "service_pars_description"
+msgstr ""
+
+#. Default: "Service parameters"
+#: ./content/webserviceclient.py:50
+msgid "service_pars_label"
+msgstr ""
+
+#. Default: "Service URL"
+#: ./content/webserviceclient.py:31
+msgid "service_url_label"
+msgstr ""
+
+#. Default: "one substitution per line: |search text|=>|replacement text|"
+#: ./content/externalpage.py:81
+msgid "substitutions_description"
+msgstr ""
+
+#. Default: "String substitutions"
+#: ./content/externalpage.py:80
+msgid "substitutions_label"
+msgstr ""
+
+#. Default: "one service parameter per line"
+#: ./content/xmldocument.py:70
+msgid "tags_to_extract_description"
+msgstr ""
+
+#. Default: "Tags to extract"
+#: ./content/xmldocument.py:69
+msgid "tags_to_extract_label"
+msgstr ""
+
+#. Default: "One of the URLs is not valid"
+#: ./content/validators.py:24
+msgid "urls_validation_message"
+msgstr ""
+
+#. Default: "Use external header title (<title>)"
+#: ./content/externalpage.py:67
+msgid "use_ext_title_label"
+msgstr ""
+

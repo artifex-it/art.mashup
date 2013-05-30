@@ -1,0 +1,3 @@
+<div id="webservice_result" i18n:domain="art.mashup" tal:define="res context/getResult">
+        <p tal:content="res">Web service result</p>
+</div>

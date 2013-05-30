@@ -1,0 +1,5 @@
+<div id="xml_document" i18n:domain="art.mashup" tal:define="cont context/getContent">
+
+    <div tal:content="cont"></div>
+
+</div>
