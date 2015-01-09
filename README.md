@@ -1,7 +1,7 @@
 art.mashup
 ==========
 
-Defines 3 Plone new ArcheTypes to show external web page, XML file or a web-service result query
+Defines three Plone new ArcheTypes to show external web page, XML file or a web-service result query
 
 
 TODO
